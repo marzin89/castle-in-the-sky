@@ -1,0 +1,818 @@
+/*
+Theme Name: Castle In The Sky
+Theme URI: localhost/wordpress-5.7/wordpress/wp-content/themes/castleinthesky/
+Author: Marco Zintl
+Description: A theme
+Version: 1.0
+*/
+/* Mobil */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 1em "Segoe UI", sans-serif;
+}
+
+#page-wrapper {
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+    display: block;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-bottom: 240px;
+    position: relative;
+}
+
+header {
+    background-image: url('bilder/header/header-mobil.jpg');
+    height: 60px;
+    position: fixed;
+    width: 100%;
+}
+
+#header-wrapper {
+    overflow: auto;
+}
+
+#logo-wrapper {
+    float: left;
+    max-width: 150px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 47%;
+}
+
+#header-right {
+    display: flex;
+    float: right;
+    max-width: 165px;
+    margin-top: 10px;
+    width: 52%;
+}
+
+#book-btn {
+    background-color: #FB4C3F;
+    border: 1px solid #FB4C3F;
+    font-size: inherit;
+    font-weight: inherit;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 2.5px;
+    max-width: 80px;
+    order: 1;
+    text-align: center;
+    width: 48%;
+}
+
+#book-btn > a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+}
+
+#search-icon {
+    max-width: 25px;
+    margin: 0 2.5px;
+    order: 2;
+    width: 15%;
+}
+
+#search-icon:hover {
+    cursor: pointer;
+}
+
+#search {
+    display: none;
+    font-family: inherit;
+    font-size: inherit;
+    height: 30px;
+    padding-left: 5px;
+    width: 100px;
+}
+
+#hamburger-icon {
+    max-width: 35px;
+    margin-left: 2.5px;
+    margin-right: 5px;
+    order: 3;
+    width: 21%;
+}
+
+#hamburger-icon:hover {
+    cursor: pointer;
+}
+
+#main-nav {
+    background-image: url('bilder/header/hamburger-menu.jpg');
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+}
+
+#main-nav > ul {
+    margin: 0 auto;
+    width: 20%;
+}
+
+#main-nav ul > li {
+    list-style-type: none;
+    padding: 2.5px 0;
+}
+
+#main-nav ul li > a {
+    color: #000;
+    font-size: 1.13em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#main-nav ul li > a:hover {
+    color: #fff;
+}
+
+#subnav {
+    padding: 5px;
+}
+
+#subnav ul > li {
+    padding: 5px;
+}
+
+#subnav ul li > a {
+    color: #000;
+    font-size: 1.13em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#header-image {
+    background-image: url('bilder/header/hamburger-menu.jpg');
+    height: 240px;
+    padding-top: 170px;
+}
+
+#welcome {
+    max-width: 460px;
+    margin: 0 auto;
+    width: 94%;
+}
+
+.find-out-more, 
+.more-link {
+    background-color: #FB4C3F;
+    border: none;
+    font-size: inherit;
+    height: 30px;
+    width: 100%;
+}
+
+.find-out-more > a, 
+.more-link {
+    color: #000;
+    display: block;
+    font-weight: 400;
+    height: 30px;
+    padding-top: 3px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.find-out-more > a:hover {
+    color: #fff;
+}
+
+p {
+    margin: 10px 0;
+}
+
+#language-picker {
+    max-width: 460px;
+    margin: 10px auto;
+    overflow: auto;
+    width: 94%;
+}
+
+#languages {
+    float: right;
+    height: 30px;
+    max-width: 50px;
+    width: 17%;
+}
+
+#main-content, 
+#news, 
+#rooms, 
+#activities,
+#contact-form, 
+#room, 
+#about, 
+#booking-form {
+    max-width: 460px;
+    margin: 0 auto;
+    width: 94%;
+}
+
+#upcoming-events > h2, 
+.h2-activities, 
+.h2-home {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.widget {
+    min-width: 300px;
+    min-height: 164px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#upcoming-events, 
+#recent-news {
+    margin-bottom: 20px;
+}
+
+.staff {
+    width: 100%;
+}
+
+.employee {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 94%;
+}
+
+.employee > p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#event1 {
+    background-repeat: no-repeat;
+}
+
+#event2 {
+    background-repeat: no-repeat;
+}
+
+#event3 {
+    background-repeat: no-repeat;
+}
+
+article {
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.excerpt {
+    background-color: #F5E6E6;
+    border: 1px solid #707070;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+.date {
+    font-size: 0.88em;
+    font-style: italic;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.img-desktop, 
+.employee-img-desktop, 
+.employee-img-tablet {
+    display: none;
+}
+
+#reset, 
+#submit {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #dbc5ca;
+    border: 1px solid #707070;
+    bottom: 0;
+    height: 240px;
+    left: 0;
+    margin-top: 30px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+#footer-wrapper {
+    margin: 10px auto;
+    width: 94%;
+}
+
+a {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.h2-articles {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+h3, 
+th {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+#booking-form {
+    margin-bottom: 20px;
+}
+
+#form-text {
+    background-color: #F5E6E6;
+    border: 1px solid #707070;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-left {
+    float: left;
+    max-width: 210px;
+    width: 48%;
+}
+
+.form-right {
+    float: right;
+    max-width: 210px;
+    width: 48%;
+}
+
+label {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.text-inputs {
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.h2-form {
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+form {
+    border: 1px solid #707070;
+    background-color: #fff;
+    overflow: auto;
+    padding: 10px;
+}
+
+form > div {
+    margin: 5px 0;
+}
+
+.summary {
+    background-color: #F5E6E6;
+    border: 1px solid #707070;
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.summary > ul {
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+textarea {
+    height: 250px;
+    width: 100%;
+}
+
+#gdpr {
+    margin: 20px 0;
+}
+
+#gdpr-checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+#gdpr-label {
+    font-size: 1em;
+}
+
+.featured-img {
+    margin-bottom: 10px;
+}
+
+.single-text {
+    border: 1px solid #707070;
+    background-color: #F5E6E6;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+#front-page-text {
+    border: 1px solid #707070;
+    background-color: #F5E6E6;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+#blog-text {
+    border: 1px solid #707070;
+    background-color: #F5E6E6;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.find-out-more {
+    border: 1px solid #FB4C3F;
+}
+
+.row {
+    overflow: auto;
+    width: 100%;
+}
+
+#book-form-btn {
+    margin: 10px 0;
+}
+
+form {
+    background-color: #F5E6E6;
+}
+
+.more-link {
+    display: none;
+}
+
+.img-mobile {
+    margin-bottom: 10px;
+}
+
+.blog-link {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 98.33%;
+}
+
+#adults-2, 
+#children-2 {
+    margin-bottom: 0;
+}
+
+.wp-block-group__inner-container > h2 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+
+/* Surfplatta */
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+
+    header {
+        background-image: url('bilder/header/header-tablet.jpg');
+    }
+
+    #header-image {
+        background-image: url('bilder/header/header-image-tablet.jpg');
+    }
+
+    #main-nav {
+        background-image: url('bilder/header/hamburger-menu-tablet.jpg');
+    }
+
+    #main-nav > ul {
+        min-width: 100px;
+        width: 10%;
+    }
+
+    #welcome {
+        max-width: 580px;
+    }
+
+    #language-picker {
+        max-width: 939px;
+        width: 98%;
+    }
+
+    #main-content, 
+    #news, 
+    #rooms, 
+    #activities,
+    #contact-form, 
+    #room, 
+    #about, 
+    #booking-form {
+        max-width: 580px;
+        width: 98%;
+    }
+
+    .widget {
+        min-width: 460px;
+        min-height: 250px;
+    }
+
+    .img-desktop {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .employee-img-tablet {
+        display: block;
+    }
+
+    .img-mobile, 
+    .employee-img-mobile {
+        display: none;
+    }
+
+    #footer-wrapper {
+        min-width: 248px;
+        overflow: auto;
+        width: 26%;
+    }
+
+    #form-text {
+        width: 100%
+    }
+
+    .form-left, 
+    .form-right {
+        max-width: 270px;
+        width: 48%;
+    }
+
+    .employee {
+        max-width: 460px;
+    }
+
+    .wp-block-image > figcaption {
+        bottom: 190px;
+    }
+
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 960px) {
+
+    #page-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 162px;
+    }
+
+    header {
+        background-image: url('bilder/header/header-desktop.jpg');
+        max-width: 1200px;
+    }
+
+    #logo-wrapper {
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 12.5%;
+    }
+
+    #header-right {
+        float: right;
+        min-width: 730px;
+        margin-right: 10px;
+        margin-top: 15px;
+        width: 65.8%;
+    }
+
+    #book-btn {
+        min-width: 100px;
+        margin-right: 10px;
+        padding-top: 2.5px;
+        width: 15%;
+    }
+
+    #search {
+        display: block;
+        min-width: 100px;
+        margin-left: 10px;
+        order: 2;
+        width: 15%;
+    }
+
+    #search-icon {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: none;
+    }
+
+    #main-nav {
+        background-image: none;
+        display: block;
+        order: 3;
+        position: static;
+    }
+
+    #main-nav > ul {
+        list-style-type: none;
+        width: 100%;
+    }
+
+    #main-nav ul > li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    #header-image {
+        background-image: url('bilder/header/header-image-desktop.jpg');
+        height: 340px;
+        padding-top: 240px;
+    }
+
+    #welcome {
+        max-width: 600px;
+    }
+
+    #language-picker {
+        max-width: 1180px;
+        width: 98%;
+    }
+
+    #main-content {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    #news, 
+    #rooms, 
+    #activities, 
+    #room, 
+    #about {
+        max-width: 1180px;
+        width: 98.3%;
+    }
+
+    #upcoming-events > h2, 
+    .h2-home {
+        text-align: center;
+    }
+
+    #upcoming-events > div, 
+    #recent-news > div, 
+    #staff > div, 
+    #sidebar-primary {
+        display: flex;
+    }
+
+    .widget {
+        min-width: 300px;
+        min-height: 207px;
+        margin: 0 1%;
+        width: 31.3%;
+    }
+
+    .employee {
+        margin: 0 1%;
+        margin-top: 30px;
+        width: 31.3%;
+    }
+
+    .news-article {
+        margin: 0 1%;
+        width: 31.3%;
+    }
+
+    .article-left, 
+    .room-left, 
+    .activity-left {
+        float: left;
+        width: 49%;
+    }
+
+    .article-right, 
+    .room-right, 
+    .activity-right {
+        float: right;
+        width: 49%;
+    }
+
+    .single-left {
+        float: left;
+        width: 49%;
+    }
+
+    .single-right {
+        float: right;
+        width: 49%;
+    }
+
+    #booking-form {
+        width: 50%;
+    }
+
+    .form-left, 
+    .form-right {
+        max-width: 280px;
+        width: 48.5%;
+    }
+
+    #booking-form {
+        max-width: 600px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    .img-mobile, 
+    .employee-img-mobile, 
+    .employee-img-tablet {
+        display: none;
+    }
+
+    .img-desktop {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .employee-img-desktop {
+        display: block;
+    }
+
+    #contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    footer {
+        height: 162px;
+    }
+
+    #footer-wrapper {
+        overflow: auto;
+        width: 98.3%;
+    }
+
+    #footer-left {
+        float: left;
+        min-width: 248px;
+        width: 21%;
+    }
+
+    #footer-right {
+        float: right;
+        min-width: 248px;
+        width: 21%;
+    }
+
+    #contact-left {
+        float: left;
+        width: 280px;
+    }
+
+    #contact-right {
+        float: right;
+        width: 280px;
+    }
+
+    .blog-link {
+        text-align: center;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+}
